@@ -1,0 +1,12 @@
+{
+  "notes" : [ ],
+  "scheduledDate" : "2014/10/25 2:08 PM PDT",
+  "actions" : [ {
+    "type" : "localinstallinfrastructure",
+    "project" : "infrastructure",
+    "packages" : "Ant/apache-ant-1.9.4-bin",
+    "forceInstall" : false,
+    "installOnHostsStyle" : "CONF_AND_CARNIVAL_INSTALL_STYLE",
+    "acceptanceThreshold" : "100.0"
+  } ]
+}

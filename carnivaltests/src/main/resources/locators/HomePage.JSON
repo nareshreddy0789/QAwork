@@ -1,0 +1,31 @@
+{
+    "CreateRequestLink": 
+    { 
+    	"locator": "Create a Request",
+    	"type": "link"
+    },
+    
+    "OverViewOfHosts": 
+    { 
+    	"locator": "//ul[contains(@id,'monitoringNav')]/li[2]/a",
+    	"type": "xpath"
+    },
+    
+      "InstallBuild": 
+    { 
+    	"locator": "ul.Nav[id='buildsNav']>li>a",
+    	"type": "css"
+    },
+    
+     "LogOut": 
+    { 
+    	"locator": "//li[@id='logout']//a",
+    	"type": "xpath"
+    },
+    
+      "EnvironmentInfoLink": 
+    { 
+    	"locator": "Environment Info",
+    	"type": "link"
+    }
+}

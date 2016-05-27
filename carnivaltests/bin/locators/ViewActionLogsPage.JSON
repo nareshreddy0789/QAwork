@@ -1,0 +1,8 @@
+{
+    "ActionLog": 
+    { 
+    	"locator": "//div[@id='Wrapper']//div[@id='Page']//pre",
+    	"type": "xpath"
+    }
+
+}

@@ -1,0 +1,30 @@
+{
+    "ShowInstalledSoftwareLink": 
+    { 
+    	"locator": "Show Installed Software",
+    	"type": "link"
+    },
+    
+    "InstalledSoftwareDiv": 
+    { 
+    	"locator": "installedSoftwareDisplayDivContent",
+    	"type": "id"
+    },
+    
+    "BinaryConfTable":
+    {
+        "locator": "TABLE_BinariesConf",
+    	"type": "id"
+    
+    },
+    
+     "PSConfTable":
+    {
+        "locator": "TABLE_CurrentlyRunning_BinariesConf",
+    	"type": "id"
+    
+    }
+    
+   
+
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="CarnivalAutoRestartTestSuite">
+
+
+
+	<test name="AUTO-RESTART-TESTS" enabled="true">
+		<!-- NOTE : This test assumes that we have conf(Ex:clown14A147) package existing on Carnival and WD40 host -->
+		<classes>
+			<class name="com.apple.carnival.api.request.AutoRestartTests">
+				<methods>
+					<parameter name="carnival.wd40host" value="vp21q01if-ztbu14114701" />
+					<parameter name="carnival.domain" value="vp.if1.apple.com" />
+					<parameter name="carnival.project" value="CarnivalQA" />
+					<parameter name="carnival.package" value="clown14A147" />
+					<parameter name="carnival.appname" value="clown" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+</suite>

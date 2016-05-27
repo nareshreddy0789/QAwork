@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PACKAGE-INSTALL-TESTS"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="22.008">
+  <properties />
+  
+  
+            <testcase name="installPackageUsinInvalidPackageName" time="11.057" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixNegativeTests" />
+                <testcase name="init" time="0.004" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixNegativeTests" />
+                <testcase name="installPackageWithOutPackageName" time="10.947" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixNegativeTests" />
+      
+</testsuite>

@@ -1,0 +1,175 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="CarnivalTestSuite">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	
+
+	<test name="LOCAL-INSTALL-HOTFIX-TESTS" enabled="true">
+		<!-- NOTE : This test assumes that we have a conf package (Ex: cottoncandyCONF14D12) package existing on Carnival and WD40 host -->
+		<classes>
+			
+ 			<class name="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" >
+				<methods>	
+					<parameter name="carnival.host" value="vp21q01if-ztbu14114601" />	
+					<parameter name="carnival.wd40host1" value="vp21q01if-ztbu14114701" />
+					<parameter name="carnival.wd40host2" value="vp21q01if-hpba15080901" />			
+					<parameter name="carnival.domain" value="vp.if1.apple.com" />		
+					<parameter name="carnival.project" value="CarnivalQA" />
+					<parameter name="carnival.package" value="cottoncandy_bin14D.3a7b1" />	
+				</methods>	
+			</class> 
+			
+			<class name="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests" >
+				<methods>	
+					<parameter name="carnival.host" value="vp21q01if-ztbu14114601" />	
+					<parameter name="carnival.wd40host1" value="vp21q01if-ztbu14114701" />
+					<parameter name="carnival.wd40host2" value="vp21q01if-hpba15080901" />			
+					<parameter name="carnival.domain" value="vp.if1.apple.com" />		
+					<parameter name="carnival.project" value="CarnivalQA" />
+					<parameter name="carnival.package" value="cottoncandy_bin14D.3a7b1" />	
+				</methods>	
+			</class> 
+
+			<class name="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" >
+				<methods>	
+					<parameter name="carnival.host" value="vp21q01if-ztbu14114601" />	
+					<parameter name="carnival.wd40host1" value="vp21q01if-ztbu14114701" />
+					<parameter name="carnival.wd40host2" value="vp21q01if-hpba15080901" />			
+					<parameter name="carnival.domain" value="vp.if1.apple.com" />		
+					<parameter name="carnival.project" value="CarnivalQA" />
+					<parameter name="carnival.package" value="cottoncandy_bin14D.3a7b1" />	
+				</methods>	
+			</class>
+			
+		</classes>
+	</test>
+	
+		<test name="LOCAL-INSTALL-BUILD-TESTS" enabled="true">
+		<classes>
+			
+			<class name="com.apple.carnival.ui.localinstall.LocalInstallBuildWhenPackageIsUnavailableTests" >
+				<methods>	
+					<parameter name="carnival.host" value="vp21q01if-ztbu14114601" />	
+					<parameter name="carnival.wd40host1" value="vp21q01if-ztbu14114701" />
+					<parameter name="carnival.wd40host2" value="vp21q01if-hpba15080901" />			
+					<parameter name="carnival.domain" value="vp.if1.apple.com" />		
+					<parameter name="carnival.project" value="CarnivalQA" />
+					<parameter name="carnival.package" value="PropertiesCARNIVALQA14A149" />	
+				</methods>	
+			</class>
+		
+			<class name="com.apple.carnival.ui.localinstall.LocalInstallBuildUsingForceInstallOptionWhenPackageIsAvailableTests" >
+				<methods>	
+					<parameter name="carnival.host" value="vp21q01if-ztbu14114601" />	
+					<parameter name="carnival.wd40host1" value="vp21q01if-ztbu14114701" />
+					<parameter name="carnival.wd40host2" value="vp21q01if-hpba15080901" />			
+					<parameter name="carnival.domain" value="vp.if1.apple.com" />		
+					<parameter name="carnival.project" value="CarnivalQA" />
+					<parameter name="carnival.package" value="PropertiesCARNIVALQA14A149" />	
+				</methods>	
+			</class>
+ 			<class name="com.apple.carnival.ui.localinstall.LocalInstallBuildUsingNoForceInstallOptionWhenPackageIsAvailableTests" >
+				<methods>	
+					<parameter name="carnival.host" value="vp21q01if-ztbu14114601" />	
+					<parameter name="carnival.wd40host1" value="vp21q01if-ztbu14114701" />
+					<parameter name="carnival.wd40host2" value="vp21q01if-hpba15080901" />			
+					<parameter name="carnival.domain" value="vp.if1.apple.com" />		
+					<parameter name="carnival.project" value="CarnivalQA" />
+					<parameter name="carnival.package" value="PropertiesCARNIVALQA14A149" />	
+				</methods>	
+			</class> 
+		</classes>
+	</test>
+ 
+ 
+	<test name="AUTO-RESTART-TESTS" enabled="true">
+		<!-- NOTE : This test assumes that we have a conf package (Ex: clownCONF14A162) package existing on Carnival and WD40 host -->
+		<classes>
+			<class name="com.apple.carnival.api.request.AutoRestartTests">
+				<methods>					
+					<parameter name="carnival.wd40host" value="vp21q01if-ztbu14114701" />
+					<parameter name="carnival.domain" value="vp.if1.apple.com" />
+					<parameter name="carnival.project" value="CarnivalQA" />
+					<parameter name="carnival.package" value="clown14A147" />
+					<parameter name="carnival.appname" value="clown" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+ 	<test name="GET-TESTS">
+		<classes>
+			<class name="com.apple.carnival.api.request.AllHostsTests" />
+			<class name="com.apple.carnival.api.request.AllApplicationTests" />
+			<class name="com.apple.carnival.api.request.ApplicationHostsTests" />
+			<class name="com.apple.carnival.api.request.ApplicationInstancesTests" />
+		</classes>
+	</test>
+
+	<test name="PACKAGE-UNINSTALL-TESTS" enabled="true">
+		<classes>
+			<class name="com.apple.carnival.api.request.UninstallPackageIfNotCurrentOnCarnivalTests" >
+				<methods>
+					<parameter name="carnival.host" value="vp21q01if-ztbu14114601" />				
+					<parameter name="carnival.wd40host" value="vp21q01if-ztbu14114701" />
+					<parameter name="carnival.domain" value="vp.if1.apple.com" />
+					<parameter name="carnival.project" value="CarnivalQA" />
+					<parameter name="carnival.package" value="cottoncandy_bin14D12" />	
+				</methods>	
+			</class>
+			<class name="com.apple.carnival.api.request.UninstallPackageFromCarnivalHostTests">
+				<methods>
+					<parameter name="carnival.host" value="vp21q01if-ztbu14114601" />				
+					<parameter name="carnival.wd40host" value="vp21q01if-ztbu14114701" />
+					<parameter name="carnival.domain" value="vp.if1.apple.com" />
+					<parameter name="carnival.project" value="CarnivalQA" />
+					<parameter name="carnival.package" value="cottoncandy_bin14D12" />	
+				</methods>	
+			</class>
+			<class name="com.apple.carnival.api.request.UninstallPackageFromCarnivalAndWD40HostTests">
+				<methods>	
+					<parameter name="carnival.host" value="vp21q01if-ztbu14114601" />				
+					<parameter name="carnival.wd40host1" value="vp21q01if-ztbu14114701" />
+					<parameter name="carnival.wd40host2" value="vp21q01if-hpba15080901" />
+					<parameter name="carnival.domain" value="vp.if1.apple.com" />
+					<parameter name="carnival.project" value="CarnivalQA" />
+					<parameter name="carnival.package" value="cottoncandy_bin14D12" />				
+				</methods>			
+			</class>
+			<class name="com.apple.carnival.api.request.UninstallPackgaeNegativeTests" >
+			<!--  NOTE : This test assumes that we have a package (Ex:clownCONF14A162) existing on a host we plan to uninstall -->
+				<methods>		
+					<parameter name="carnival.wd40host" value="vp21q01if-ztbu14114701" />
+					<parameter name="carnival.domain" value="vp.if1.apple.com" />
+					<parameter name="carnival.project" value="CarnivalQA" />
+					<parameter name="carnival.package" value="clownCONF14A162" />	
+				</methods>	
+			</class>
+		</classes>
+	</test> 
+
+ 
+	<test name="PACKAGE-INSTALL-TESTS" enabled="true">
+		<classes>
+			<class name="com.apple.carnival.api.request.InstallPackgaeNegativeTests" >
+				<methods>			
+					<parameter name="carnival.project" value="CarnivalQA" />
+				</methods>	
+			</class>
+			<class name="com.apple.carnival.api.request.WD40HostClownBuildRequestTests" >
+				<!-- NOTE : This test assumes that we have a conf package (Ex: clownCONF14A162) package existing on Carnival and WD40 host -->
+				<methods>			
+					<parameter name="carnival.wd40host" value="vp21q01if-ztbu14114701" />
+					<parameter name="carnival.domain" value="vp.if1.apple.com" />
+					<parameter name="carnival.project" value="CarnivalQA" />
+					<parameter name="carnival.package" value="clown14A147" />	
+				</methods>	
+			</class>
+		</classes>
+	</test>
+ 
+
+</suite>

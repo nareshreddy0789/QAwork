@@ -1,0 +1,7 @@
+{
+    "TaskLink": 
+    { 
+    	"locator": "//div[@id='messages']/div[@id='notice']/a",
+    	"type": "xpath"
+    }
+}

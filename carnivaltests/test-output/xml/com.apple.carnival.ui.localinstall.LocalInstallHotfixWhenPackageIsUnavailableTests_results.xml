@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LOCAL-INSTALL-HOTFIX-TESTS"
+           tests="17"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="1147.484">
+  <properties />
+  
+  
+            <testcase name="validateFileSystemOnWD40Host2ToCheckSerFileExists" time="2.443" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" />
+                <testcase name="validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists" time="2.644" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" />
+                <testcase name="validateTaskDetailsLogs" time="2.222" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" />
+                <testcase name="validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists" time="2.416" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" />
+                <testcase name="validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists" time="2.783" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" />
+                <testcase name="uninstallPackageFromCarnivalHostWhileItsCurrent" time="37.838" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" />
+                <testcase name="validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists" time="2.345" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" />
+                <testcase name="installPackageUsingValidPackageName" time="35.601" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" />
+                <testcase name="validateTaskDetailsPage" time="37.252" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" />
+                <testcase name="validateFileSystemOnCarnivalHostToCheckSerFileExists" time="2.380" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" />
+                <testcase name="init" time="0.004" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" />
+                <testcase name="validateTaskDetailsLogsAfterUinstall" time="2.314" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" />
+                <testcase name="validateEnvironmentInfoPageToCheckPackageIsNotCurrent" time="18.259" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" />
+                <testcase name="validateTaskDetailsPageAfterUninstall" time="37.697" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" />
+                <testcase name="validateEnvironmentInfoPageToCheckPackageIsCurrent" time="955.343" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" />
+                <testcase name="validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists" time="3.185" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" />
+                <testcase name="validateFileSystemOnWD40Host1ToCheckSerFileExists" time="2.758" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" />
+      
+</testsuite>

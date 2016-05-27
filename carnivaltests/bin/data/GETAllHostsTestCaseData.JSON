@@ -1,0 +1,17 @@
+{
+	"test_id":"TC-2",
+	"test_description":"Get All Hosts",
+	"input":
+	{
+		"resource":"/services/hosts",
+		"method":"GET"
+	},
+	"expected":
+	{
+		"statuscode":200,
+		"entity":"vp21q01if-hpba15080901,vp21q01if-ztbu14114601,vp21q01if-ztbu14114701"
+		
+	}
+	
+	
+}

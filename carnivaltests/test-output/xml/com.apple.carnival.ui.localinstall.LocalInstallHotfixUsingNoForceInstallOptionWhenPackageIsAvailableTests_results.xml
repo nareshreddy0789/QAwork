@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LOCAL-INSTALL-HOTFIX-TESTS"
+           tests="19"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="2138.666">
+  <properties />
+  
+  
+            <testcase name="validateFileSystemOnWD40Host2ToCheckSerFileExists" time="2.418" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" />
+                <testcase name="validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists" time="2.385" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" />
+                <testcase name="init" time="0.000" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" />
+                <testcase name="validateEnvironmentInfoPageToCheckPackageIsNotCurrent" time="18.328" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" />
+                <testcase name="uninstallPackageFromCarnivalHostWhileItsCurrent" time="37.685" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" />
+                <testcase name="installPackageUsingValidPackageName" time="38.326" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" />
+                <testcase name="validateTaskDetailsLogsAfterReinstall" time="2.229" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" />
+                <testcase name="validateTaskDetailsPageAfterReinstall" time="37.249" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" />
+                <testcase name="validateFileSystemOnCarnivalHostToCheckSerFileExists" time="2.409" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" />
+                <testcase name="validateEnvironmentInfoPageToCheckPackageIsCurrentAfterReinstall" time="955.316" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" />
+                <testcase name="validateFileSystemOnWD40Host1ToCheckSerFileExists" time="2.387" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" />
+                <testcase name="validateTaskDetailsLogsAfterUinstall" time="2.240" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" />
+                <testcase name="validateEnvironmentInfoPageToCheckPackageIsCurrent" time="955.334" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" />
+                <testcase name="validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists" time="2.339" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" />
+                <testcase name="validateTaskDetailsPageAfterUninstall" time="37.225" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" />
+                <testcase name="validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists" time="2.327" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" />
+                <testcase name="validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists" time="2.389" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" />
+                <testcase name="validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists" time="2.398" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" />
+                <testcase name="reinstallExistingPackageUsingNoForceOption" time="35.682" classname="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" />
+      
+</testsuite>

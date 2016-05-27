@@ -1,0 +1,33 @@
+[
+
+{
+	"test_id":"TC1-2",
+	"test_description":"Schedule Request using JSON POST",
+	"input":
+	{
+		"resource":"/services/1.0/workflow/request/schedule",
+		"method":"POST",
+		"entity":
+		{
+			"requestID" : "",
+		 	"note" : "CI Builder Schedule Request"
+		}
+	},
+  	"expected":
+	{
+		"statuscode":200,
+		"entity":
+		{
+			"status":"200-OK",
+			"code":"SUCCESS",
+			"description":"null",
+			"request":{"status":"QUEUED"}
+		}
+		
+	}
+}
+
+
+
+
+]

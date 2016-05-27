@@ -1,0 +1,19 @@
+{
+	"test_id":"TC-1",
+	"test_description":"Get All Applications Installed on Carnival and WD40 Hosts as XML",
+	"input":
+	{
+		"resource":"/services/isapplications",
+		"method":"GET",
+		"headers":{"accept":"application/xml"}
+		
+	},
+	"expected":
+	{
+		"statuscode":200,
+		"entity":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><message><code>SUCCESS</code><ISApplications><ISApplication><name>Carnival</name></ISApplication><ISApplication><name>WD40OpenMQ</name></ISApplication><ISApplication><name>clown</name></ISApplication><ISApplication><name>cottoncandy</name></ISApplication></ISApplications></message>"
+		
+	}
+	
+	
+}

@@ -1,0 +1,19 @@
+{
+	"test_id":"TC-1",
+	"test_description":"Get All Applications Installed on Carnival and WD40 Hosts",
+	"input":
+	{
+		"resource":"/services/isapplications",
+		"method":"GET",
+		"headers":{"accept":"text/plain"}
+		
+	},
+	"expected":
+	{
+		"statuscode":200,
+		"entity":"Carnival,WD40OpenMQ,clown,cottoncandy"
+		
+	}
+	
+	
+}

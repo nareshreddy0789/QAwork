@@ -1,0 +1,228 @@
+<h2>Reporter output</h2><table><tr><td>Initializing and Loading Configuration</td></tr>
+<tr><td>LocalInstallHotfixWhenPackageIsUnavailableTests tests with the following details :</td></tr>
+<tr><td>Carnival Host :vp21q01if-ztbu14114601</td></tr>
+<tr><td>Domain  :vp.if1.apple.com</td></tr>
+<tr><td>PROEJCT :CarnivalQA</td></tr>
+<tr><td>PACKAGE  :cottoncandyCONF14D.3a7b1</td></tr>
+<tr><td>Local Install Hotfix from carnival UI with valid package name</td></tr>
+<tr><td>Performing Assertions</td></tr>
+<tr><td>Expected notice is : Successfully scheduled task \d{13} for execution! and got error message from server as  : Successfully scheduled task 1428034475312 for execution!</td></tr>
+<tr><td>The request ID is :1428034475312</td></tr>
+<tr><td>Validate Task Details Page</td></tr>
+<tr><td>The task detail url is :http://vp21q01if-ztbu14114601.vp.if1.apple.com:8080/Carnival/TaskDetail.jsp?id=1428034475312</td></tr>
+<tr><td>The Current Status is : COMPLETED</td></tr>
+<tr><td>Validate View Logs Page after install</td></tr>
+<tr><td>Validate Taks Details Logs</td></tr>
+<tr><td>The Action Log is : Thu Apr 02 21:14:39 PDT 2015 Local Install(s) Info cottoncandyCONF14D.3a7b1 queued for execution.
+Thu Apr 02 21:14:41 PDT 2015 User 17.153.41.45 requested install of cottoncandyCONF14D.3a7b1 for project CarnivalQA on Carnival host vp21q01if-ztbu14114601.
+Thu Apr 02 21:14:42 PDT 2015 cottoncandyCONF14D.3a7b1 install confirmed on this Carnival host.
+Thu Apr 02 21:14:44 PDT 2015 Sending install requests to configured hosts...
+Thu Apr 02 21:14:44 PDT 2015 Determining hosts missing package: cottoncandyCONF14D.3a7b1.  Sending followup install requests to 2 active host(s).Expand/Collapse
+
+Thu Apr 02 21:14:44 PDT 2015 Verifying install. Giving applications up to 5 min.
+Thu Apr 02 21:14:45 PDT 2015 cottoncandyCONF14D.3a7b1 has been confirmed on the required 2 hosts below: 
+Expand/Collapse
+
+
+Thu Apr 02 21:14:45 PDT 2015 Install of cottoncandyCONF14D.3a7b1 for project CarnivalQA has succeeded on 100.0% ( 2 out of 2 ) of required hosts.  Acceptance Threshold entered by user: 100.0%.</td></tr>
+<tr><td>Validate Environment Info Page to check the package is Current</td></tr>
+<tr><td>Wait for 15 mins for the Environemnt Info page to refresh</td></tr>
+<tr><td>The packages are :clown ()
+clownCONF (clownCONF14A162)
+cottoncandyCONF (cottoncandyCONF14D.3a7b1)
+cottoncandy_bin ()</td></tr>
+<tr><td>Validate the package :cottoncandyCONF14D.3a7b1 is current</td></tr>
+<tr><td>Check to see .ser file exists under /opt/ais/local/.wd40-inventory/Install </td></tr>
+<tr><td>Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</td></tr>
+<tr><td>.ser file location is :/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser</td></tr>
+<tr><td>The out put is : 
+/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser
+</td></tr>
+<tr><td>Check to see .ser file exists under /opt/ais/local/.wd40-inventory/Install </td></tr>
+<tr><td>Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</td></tr>
+<tr><td>.ser file location is :/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser</td></tr>
+<tr><td>The out put is : 
+/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser
+</td></tr>
+<tr><td>Check to see .ser file exists under /opt/ais/local/.wd40-inventory/Install </td></tr>
+<tr><td>Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</td></tr>
+<tr><td>.ser file location is :/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser</td></tr>
+<tr><td>The out put is : 
+/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser
+</td></tr>
+<tr><td>Check to see .corrupt file does not exists under /opt/ais/local/.wd40-inventory/Install </td></tr>
+<tr><td>Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</td></tr>
+<tr><td>.ser file location is :</td></tr>
+<tr><td>The out put is : 
+</td></tr>
+<tr><td>Check to see .corrupt file does not exists under /opt/ais/local/.wd40-inventory/Install </td></tr>
+<tr><td>Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</td></tr>
+<tr><td>.ser file location is :</td></tr>
+<tr><td>The out put is : 
+</td></tr>
+<tr><td>Uninstalling the package from carnival UI</td></tr>
+<tr><td>Uninstall Successfull</td></tr>
+<tr><td>Performing Assertions</td></tr>
+<tr><td>Expected note is : Successfully scheduled task \d{13} for execution! and got  note from server as  : Successfully scheduled task 1428035520308 for execution!</td></tr>
+<tr><td>Validate Environment Info Page to check the package is not Current</td></tr>
+<tr><td>Wait for 15 seconds for the Environemnt Info page to refresh</td></tr>
+<tr><td>The packages are :clown ()
+clownCONF (clownCONF14A162)</td></tr>
+<tr><td>Validate the package :cottoncandyCONF14D.3a7b1 is not current</td></tr>
+<tr><td>Validate Task Details Page</td></tr>
+<tr><td>The task detail url is :http://vp21q01if-ztbu14114601.vp.if1.apple.com:8080/Carnival/TaskDetail.jsp?id=1428035520308</td></tr>
+<tr><td>The Current Status is : COMPLETED</td></tr>
+<tr><td>Validate Taks Details Logs</td></tr>
+<tr><td>The Action Log is : Thu Apr 02 21:32:09 PDT 2015 Uninstall Package(s): cottoncandyCONF14D.3a7b1 queued for execution.
+Thu Apr 02 21:32:12 PDT 2015 User 17.153.41.45 requested uninstall of cottoncandyCONF14D.3a7b1 for project CarnivalQA on Carnival host vp21q01if-ztbu14114601.
+Thu Apr 02 21:32:13 PDT 2015 cottoncandyCONF14D.3a7b1 uninstall confirmed on this Carnival host.
+Thu Apr 02 21:32:15 PDT 2015 Sending uninstall requests to configured hosts...
+Thu Apr 02 21:32:15 PDT 2015 Determining hosts missing package: cottoncandyCONF14D.3a7b1.  Sending followup uninstall requests to 2 active host(s).Expand/Collapse
+
+Thu Apr 02 21:32:15 PDT 2015 Verifying uninstall. Giving applications up to 5 min.
+Thu Apr 02 21:32:16 PDT 2015 cottoncandyCONF14D.3a7b1 has been confirmed on the required 2 hosts below: 
+Expand/Collapse
+
+
+Thu Apr 02 21:32:16 PDT 2015 Uninstall of cottoncandyCONF14D.3a7b1 for project CarnivalQA has succeeded on 100.0% ( 2 out of 2 ) of required hosts.  Acceptance Threshold entered by user: 100.0%.</td></tr>
+<tr><td>Check to see .ser file does not exists under /opt/ais/local/.wd40-inventory/Install </td></tr>
+<tr><td>Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</td></tr>
+<tr><td>.ser file location is :/opt/ais/local/.wd40-inventory/Install/</td></tr>
+<tr><td>The out put is : 
+</td></tr>
+<tr><td>Check to see .ser file exists under /opt/ais/local/.wd40-inventory/Install </td></tr>
+<tr><td>Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</td></tr>
+<tr><td>.ser file location is :</td></tr>
+<tr><td>The out put is : 
+</td></tr>
+<tr><td>Check to see .ser file exists under /opt/ais/local/.wd40-inventory/Install </td></tr>
+<tr><td>Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</td></tr>
+<tr><td>.ser file location is :</td></tr>
+<tr><td>The out put is : 
+</td></tr>
+<tr><td>
+Logging out and closing  browser session
+</td></tr>
+<tr><td>Initializing and Loading Configuration</td></tr>
+<tr><td>LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests tests with the following details :</td></tr>
+<tr><td>Carnival Host :vp21q01if-ztbu14114601</td></tr>
+<tr><td>Domain  :vp.if1.apple.com</td></tr>
+<tr><td>PROEJCT :CarnivalQA</td></tr>
+<tr><td>PACKAGE  :cottoncandyCONF14D.3a7b1</td></tr>
+<tr><td>Local Install Hotfix from carnival UI with valid package name</td></tr>
+<tr><td>
+Logging out and closing  browser session
+</td></tr>
+<tr><td>Initializing and Loading Configuration</td></tr>
+<tr><td>LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests tests with the following details :</td></tr>
+<tr><td>Carnival Host :vp21q01if-ztbu14114601</td></tr>
+<tr><td>Domain  :vp.if1.apple.com</td></tr>
+<tr><td>PROEJCT :CarnivalQA</td></tr>
+<tr><td>PACKAGE  :cottoncandyCONF14D.3a7b1</td></tr>
+<tr><td>Local Install Hotfix from carnival UI with valid package name</td></tr>
+<tr><td>Performing Assertions</td></tr>
+<tr><td>Expected notice is : Successfully scheduled task \d{13} for execution! and got error message from server as  : Successfully scheduled task 1428035681932 for execution!</td></tr>
+<tr><td>The request ID is :1428035681932</td></tr>
+<tr><td>Validate Environment Info Page to check the package is Current</td></tr>
+<tr><td>Wait for 15 mins for the Environemnt Info page to refresh</td></tr>
+<tr><td>The packages are :clown ()
+clownCONF (clownCONF14A162)
+cottoncandyCONF (cottoncandyCONF14D.3a7b1)
+cottoncandy_bin ()</td></tr>
+<tr><td>Validate the package :cottoncandyCONF14D.3a7b1 is current</td></tr>
+<tr><td>Local Install Hotfix from carnival UI with an already existing package name</td></tr>
+<tr><td>Performing Assertions</td></tr>
+<tr><td>Expected notice is : Successfully scheduled task \d{13} for execution! and got error message from server as  : Successfully scheduled task 1428036672851 for execution!</td></tr>
+<tr><td>The request ID is :1428036672851</td></tr>
+<tr><td>Validate Task Details Page after reinstall</td></tr>
+<tr><td>The task detail url is :http://vp21q01if-ztbu14114601.vp.if1.apple.com:8080/Carnival/TaskDetail.jsp?id=1428036672851</td></tr>
+<tr><td>The Current Status is : COMPLETED</td></tr>
+<tr><td>Validate View Logs Page after reinstall</td></tr>
+<tr><td>Validate Taks Details Logs</td></tr>
+<tr><td>The Action Log is : Thu Apr 02 21:51:19 PDT 2015 Local Install(s) Info cottoncandyCONF14D.3a7b1 queued for execution.
+Thu Apr 02 21:51:22 PDT 2015 User 17.153.41.45 requested install of cottoncandyCONF14D.3a7b1 for project CarnivalQA on Carnival host vp21q01if-ztbu14114601.
+Thu Apr 02 21:51:23 PDT 2015 cottoncandyCONF14D.3a7b1 install confirmed on this Carnival host.
+Thu Apr 02 21:51:24 PDT 2015 Sending install requests to configured hosts...
+Thu Apr 02 21:51:24 PDT 2015 Determining hosts missing package: cottoncandyCONF14D.3a7b1.  Sending followup install requests to 0 active host(s).Expand/Collapse
+Thu Apr 02 21:51:25 PDT 2015 Install of cottoncandyCONF14D.3a7b1 for project CarnivalQA succeeded on all required hosts.</td></tr>
+<tr><td>Validate Environment Info Page to check the package is Current</td></tr>
+<tr><td>Wait for 15 mins for the Environemnt Info page to refresh</td></tr>
+<tr><td>The packages are :clown ()
+clownCONF (clownCONF14A162)
+cottoncandyCONF (cottoncandyCONF14D.3a7b1)
+cottoncandy_bin ()</td></tr>
+<tr><td>Validate the package :cottoncandyCONF14D.3a7b1 is current</td></tr>
+<tr><td>Check to see .ser file exists under /opt/ais/local/.wd40-inventory/Install </td></tr>
+<tr><td>Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</td></tr>
+<tr><td>.ser file location is :/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser</td></tr>
+<tr><td>The out put is : 
+/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser
+</td></tr>
+<tr><td>Check to see .ser file exists under /opt/ais/local/.wd40-inventory/Install </td></tr>
+<tr><td>Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</td></tr>
+<tr><td>.ser file location is :/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser</td></tr>
+<tr><td>The out put is : 
+/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser
+</td></tr>
+<tr><td>Check to see .ser file exists under /opt/ais/local/.wd40-inventory/Install </td></tr>
+<tr><td>Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</td></tr>
+<tr><td>.ser file location is :/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser</td></tr>
+<tr><td>The out put is : 
+/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser
+</td></tr>
+<tr><td>Check to see .corrupt file does not exists under /opt/ais/local/.wd40-inventory/Install </td></tr>
+<tr><td>Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</td></tr>
+<tr><td>.ser file location is :</td></tr>
+<tr><td>The out put is : 
+</td></tr>
+<tr><td>Check to see .corrupt file does not exists under /opt/ais/local/.wd40-inventory/Install </td></tr>
+<tr><td>Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</td></tr>
+<tr><td>.ser file location is :</td></tr>
+<tr><td>The out put is : 
+</td></tr>
+<tr><td>Uninstalling the package from carnival UI</td></tr>
+<tr><td>Uninstall Successfull</td></tr>
+<tr><td>Performing Assertions</td></tr>
+<tr><td>Expected note is : Successfully scheduled task \d{13} for execution! and got  note from server as  : Successfully scheduled task 1428037717470 for execution!</td></tr>
+<tr><td>Validate Environment Info Page to check the package is not Current</td></tr>
+<tr><td>Wait for 15 seconds for the Environemnt Info page to refresh</td></tr>
+<tr><td>The packages are :clown ()
+clownCONF (clownCONF14A162)
+cottoncandyCONF ()
+cottoncandy_bin ()</td></tr>
+<tr><td>Validate the package :cottoncandyCONF14D.3a7b1 is not current</td></tr>
+<tr><td>Validate Task Details Page</td></tr>
+<tr><td>The task detail url is :http://vp21q01if-ztbu14114601.vp.if1.apple.com:8080/Carnival/TaskDetail.jsp?id=1428037717470</td></tr>
+<tr><td>The Current Status is : COMPLETED</td></tr>
+<tr><td>Validate Taks Details Logs</td></tr>
+<tr><td>The Action Log is : Thu Apr 02 22:08:39 PDT 2015 Uninstall Package(s): cottoncandyCONF14D.3a7b1 queued for execution.
+Thu Apr 02 22:08:46 PDT 2015 User 17.153.41.45 requested uninstall of cottoncandyCONF14D.3a7b1 for project CarnivalQA on Carnival host vp21q01if-ztbu14114601.
+Thu Apr 02 22:08:47 PDT 2015 cottoncandyCONF14D.3a7b1 uninstall confirmed on this Carnival host.
+Thu Apr 02 22:08:48 PDT 2015 Sending uninstall requests to configured hosts...
+Thu Apr 02 22:08:48 PDT 2015 Determining hosts missing package: cottoncandyCONF14D.3a7b1.  Sending followup uninstall requests to 2 active host(s).Expand/Collapse
+
+Thu Apr 02 22:08:48 PDT 2015 Verifying uninstall. Giving applications up to 5 min.
+Thu Apr 02 22:08:49 PDT 2015 cottoncandyCONF14D.3a7b1 has been confirmed on the required 2 hosts below: 
+Expand/Collapse
+
+
+Thu Apr 02 22:08:49 PDT 2015 Uninstall of cottoncandyCONF14D.3a7b1 for project CarnivalQA has succeeded on 100.0% ( 2 out of 2 ) of required hosts.  Acceptance Threshold entered by user: 100.0%.</td></tr>
+<tr><td>Check to see .ser file does not exists under /opt/ais/local/.wd40-inventory/Install </td></tr>
+<tr><td>Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</td></tr>
+<tr><td>.ser file location is :/opt/ais/local/.wd40-inventory/Install/</td></tr>
+<tr><td>The out put is : 
+</td></tr>
+<tr><td>Check to see .ser file exists under /opt/ais/local/.wd40-inventory/Install </td></tr>
+<tr><td>Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</td></tr>
+<tr><td>.ser file location is :</td></tr>
+<tr><td>The out put is : 
+</td></tr>
+<tr><td>Check to see .ser file exists under /opt/ais/local/.wd40-inventory/Install </td></tr>
+<tr><td>Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</td></tr>
+<tr><td>.ser file location is :</td></tr>
+<tr><td>The out put is : 
+</td></tr>
+<tr><td>
+Logging out and closing  browser session
+</td></tr>
+</table>

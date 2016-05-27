@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-CarnivalTestSuite">
+              <span class="suite-name border-failed">CarnivalTestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-CarnivalTestSuite">
+                    <span>MyTests.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-CarnivalTestSuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-CarnivalTestSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-CarnivalTestSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-CarnivalTestSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-CarnivalTestSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-CarnivalTestSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">55 methods, 1 failed,  17 skipped,  37 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-CarnivalTestSuite" class="hide-methods failed suite-CarnivalTestSuite"> (hide)</a> <!-- hide-methods failed suite-CarnivalTestSuite -->
+                      <a href="#" panel-name="suite-CarnivalTestSuite" class="show-methods failed suite-CarnivalTestSuite"> (show)</a> <!-- show-methods failed suite-CarnivalTestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-CarnivalTestSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="installPackageUsingValidPackageName">installPackageUsingValidPackageName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-CarnivalTestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-CarnivalTestSuite" class="hide-methods skipped suite-CarnivalTestSuite"> (hide)</a> <!-- hide-methods skipped suite-CarnivalTestSuite -->
+                      <a href="#" panel-name="suite-CarnivalTestSuite" class="show-methods skipped suite-CarnivalTestSuite"> (show)</a> <!-- show-methods skipped suite-CarnivalTestSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-CarnivalTestSuite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="reinstallExistingPackageUsingForceOption">reinstallExistingPackageUsingForceOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="uninstallPackageFromCarnivalHostWhileItsCurrent">uninstallPackageFromCarnivalHostWhileItsCurrent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateEnvironmentInfoPageToCheckPackageIsCurrent">validateEnvironmentInfoPageToCheckPackageIsCurrent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateEnvironmentInfoPageToCheckPackageIsCurrentAfterReinstall">validateEnvironmentInfoPageToCheckPackageIsCurrentAfterReinstall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateEnvironmentInfoPageToCheckPackageIsNotCurrent">validateEnvironmentInfoPageToCheckPackageIsNotCurrent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists">validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists">validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateFileSystemOnCarnivalHostToCheckSerFileExists">validateFileSystemOnCarnivalHostToCheckSerFileExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists">validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateFileSystemOnWD40Host1ToCheckSerFileExists">validateFileSystemOnWD40Host1ToCheckSerFileExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists">validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateFileSystemOnWD40Host2ToCheckSerFileExists">validateFileSystemOnWD40Host2ToCheckSerFileExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists">validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateTaskDetailsLogsAfterReinstall">validateTaskDetailsLogsAfterReinstall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateTaskDetailsLogsAfterUinstall">validateTaskDetailsLogsAfterUinstall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateTaskDetailsPageAfterReinstall">validateTaskDetailsPageAfterReinstall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateTaskDetailsPageAfterUninstall">validateTaskDetailsPageAfterUninstall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-CarnivalTestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-CarnivalTestSuite" class="hide-methods passed suite-CarnivalTestSuite"> (hide)</a> <!-- hide-methods passed suite-CarnivalTestSuite -->
+                      <a href="#" panel-name="suite-CarnivalTestSuite" class="show-methods passed suite-CarnivalTestSuite"> (show)</a> <!-- show-methods passed suite-CarnivalTestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-CarnivalTestSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="init(vp21q01if-ztbu14114601, vp21q01if-ztbu14114701, vp21q01if-hpba15080901, vp.if1.apple.com, CarnivalQA...)">init(vp21q01if-ztbu14114601, vp21q01if-ztbu14114701, vp21q01if-hpba15080901, vp.if1.apple.com, CarnivalQA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" hash-for-method="init(vp21q01if-ztbu14114601, vp21q01if-ztbu14114701, vp21q01if-hpba15080901, vp.if1.apple.com, CarnivalQA...)">init(vp21q01if-ztbu14114601, vp21q01if-ztbu14114701, vp21q01if-hpba15080901, vp.if1.apple.com, CarnivalQA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="init(vp21q01if-ztbu14114601, vp21q01if-ztbu14114701, vp21q01if-hpba15080901, vp.if1.apple.com, CarnivalQA...)">init(vp21q01if-ztbu14114601, vp21q01if-ztbu14114701, vp21q01if-hpba15080901, vp.if1.apple.com, CarnivalQA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" hash-for-method="installPackageUsingValidPackageName">installPackageUsingValidPackageName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="installPackageUsingValidPackageName">installPackageUsingValidPackageName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="reinstallExistingPackageUsingNoForceOption">reinstallExistingPackageUsingNoForceOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" hash-for-method="uninstallPackageFromCarnivalHostWhileItsCurrent">uninstallPackageFromCarnivalHostWhileItsCurrent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="uninstallPackageFromCarnivalHostWhileItsCurrent">uninstallPackageFromCarnivalHostWhileItsCurrent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateEnvironmentInfoPageToCheckPackageIsCurrent">validateEnvironmentInfoPageToCheckPackageIsCurrent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" hash-for-method="validateEnvironmentInfoPageToCheckPackageIsCurrent">validateEnvironmentInfoPageToCheckPackageIsCurrent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateEnvironmentInfoPageToCheckPackageIsCurrentAfterReinstall">validateEnvironmentInfoPageToCheckPackageIsCurrentAfterReinstall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateEnvironmentInfoPageToCheckPackageIsNotCurrent">validateEnvironmentInfoPageToCheckPackageIsNotCurrent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" hash-for-method="validateEnvironmentInfoPageToCheckPackageIsNotCurrent">validateEnvironmentInfoPageToCheckPackageIsNotCurrent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" hash-for-method="validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists">validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists">validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" hash-for-method="validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists">validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists">validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateFileSystemOnCarnivalHostToCheckSerFileExists">validateFileSystemOnCarnivalHostToCheckSerFileExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" hash-for-method="validateFileSystemOnCarnivalHostToCheckSerFileExists">validateFileSystemOnCarnivalHostToCheckSerFileExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists">validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" hash-for-method="validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists">validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateFileSystemOnWD40Host1ToCheckSerFileExists">validateFileSystemOnWD40Host1ToCheckSerFileExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" hash-for-method="validateFileSystemOnWD40Host1ToCheckSerFileExists">validateFileSystemOnWD40Host1ToCheckSerFileExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" hash-for-method="validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists">validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists">validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" hash-for-method="validateFileSystemOnWD40Host2ToCheckSerFileExists">validateFileSystemOnWD40Host2ToCheckSerFileExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateFileSystemOnWD40Host2ToCheckSerFileExists">validateFileSystemOnWD40Host2ToCheckSerFileExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" hash-for-method="validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists">validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists">validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" hash-for-method="validateTaskDetailsLogs">validateTaskDetailsLogs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateTaskDetailsLogsAfterReinstall">validateTaskDetailsLogsAfterReinstall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateTaskDetailsLogsAfterUinstall">validateTaskDetailsLogsAfterUinstall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" hash-for-method="validateTaskDetailsLogsAfterUinstall">validateTaskDetailsLogsAfterUinstall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" hash-for-method="validateTaskDetailsPage">validateTaskDetailsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateTaskDetailsPageAfterReinstall">validateTaskDetailsPageAfterReinstall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests" hash-for-method="validateTaskDetailsPageAfterUninstall">validateTaskDetailsPageAfterUninstall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CarnivalTestSuite" title="com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests" hash-for-method="validateTaskDetailsPageAfterUninstall">validateTaskDetailsPageAfterUninstall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-CarnivalTestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-CarnivalTestSuite" class="panel CarnivalTestSuite">
+          <div class="suite-CarnivalTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="installPackageUsingValidPackageName">
+                  </a> <!-- installPackageUsingValidPackageName -->
+                  <span class="method-name">installPackageUsingValidPackageName</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 10.01 seconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;harisha&apos;, ip: &apos;17.115.163.211&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.7.0_67&apos;
+Session ID: 829ea54f-2d3e-af44-b75c-271cb7b63a59
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.6.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.apple.carnival.ui.CreateRequestPage.peformLocalInstallHotfix(CreateRequestPage.java:209)
+	at com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests.installPackageUsingValidPackageName(LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests.java:101)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;harisha&apos;, ip: &apos;17.115.163.211&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.7.0_67&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.Utils.installClickListener/e&lt;(file:///var/folders/lh/brv7ff4d2k180g0g43cb00h00000gn/T/anonymous7287515061881047922webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:8228:5)
+	at &lt;anonymous class&gt;.WebLoadingListener/e(file:///var/folders/lh/brv7ff4d2k180g0g43cb00h00000gn/T/anonymous7287515061881047922webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:4120:7)
+	at &lt;anonymous class&gt;.WebLoadingListener/&lt;(file:///var/folders/lh/brv7ff4d2k180g0g43cb00h00000gn/T/anonymous7287515061881047922webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:4128:7)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///var/folders/lh/brv7ff4d2k180g0g43cb00h00000gn/T/anonymous7287515061881047922webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:548:5)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CarnivalTestSuite-class-failed -->
+          <div class="suite-CarnivalTestSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="reinstallExistingPackageUsingForceOption">
+                  </a> <!-- reinstallExistingPackageUsingForceOption -->
+                  <span class="method-name">reinstallExistingPackageUsingForceOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uninstallPackageFromCarnivalHostWhileItsCurrent">
+                  </a> <!-- uninstallPackageFromCarnivalHostWhileItsCurrent -->
+                  <span class="method-name">uninstallPackageFromCarnivalHostWhileItsCurrent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEnvironmentInfoPageToCheckPackageIsCurrent">
+                  </a> <!-- validateEnvironmentInfoPageToCheckPackageIsCurrent -->
+                  <span class="method-name">validateEnvironmentInfoPageToCheckPackageIsCurrent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEnvironmentInfoPageToCheckPackageIsCurrentAfterReinstall">
+                  </a> <!-- validateEnvironmentInfoPageToCheckPackageIsCurrentAfterReinstall -->
+                  <span class="method-name">validateEnvironmentInfoPageToCheckPackageIsCurrentAfterReinstall</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEnvironmentInfoPageToCheckPackageIsNotCurrent">
+                  </a> <!-- validateEnvironmentInfoPageToCheckPackageIsNotCurrent -->
+                  <span class="method-name">validateEnvironmentInfoPageToCheckPackageIsNotCurrent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists">
+                  </a> <!-- validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists -->
+                  <span class="method-name">validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists">
+                  </a> <!-- validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists -->
+                  <span class="method-name">validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnCarnivalHostToCheckSerFileExists">
+                  </a> <!-- validateFileSystemOnCarnivalHostToCheckSerFileExists -->
+                  <span class="method-name">validateFileSystemOnCarnivalHostToCheckSerFileExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists">
+                  </a> <!-- validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists -->
+                  <span class="method-name">validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnWD40Host1ToCheckSerFileExists">
+                  </a> <!-- validateFileSystemOnWD40Host1ToCheckSerFileExists -->
+                  <span class="method-name">validateFileSystemOnWD40Host1ToCheckSerFileExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists">
+                  </a> <!-- validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists -->
+                  <span class="method-name">validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnWD40Host2ToCheckSerFileExists">
+                  </a> <!-- validateFileSystemOnWD40Host2ToCheckSerFileExists -->
+                  <span class="method-name">validateFileSystemOnWD40Host2ToCheckSerFileExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists">
+                  </a> <!-- validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists -->
+                  <span class="method-name">validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTaskDetailsLogsAfterReinstall">
+                  </a> <!-- validateTaskDetailsLogsAfterReinstall -->
+                  <span class="method-name">validateTaskDetailsLogsAfterReinstall</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTaskDetailsLogsAfterUinstall">
+                  </a> <!-- validateTaskDetailsLogsAfterUinstall -->
+                  <span class="method-name">validateTaskDetailsLogsAfterUinstall</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTaskDetailsPageAfterReinstall">
+                  </a> <!-- validateTaskDetailsPageAfterReinstall -->
+                  <span class="method-name">validateTaskDetailsPageAfterReinstall</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTaskDetailsPageAfterUninstall">
+                  </a> <!-- validateTaskDetailsPageAfterUninstall -->
+                  <span class="method-name">validateTaskDetailsPageAfterUninstall</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CarnivalTestSuite-class-skipped -->
+          <div class="suite-CarnivalTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="init(vp21q01if-ztbu14114601, vp21q01if-ztbu14114701, vp21q01if-hpba15080901, vp.if1.apple.com, CarnivalQA...)">
+                  </a> <!-- init(vp21q01if-ztbu14114601, vp21q01if-ztbu14114701, vp21q01if-hpba15080901, vp.if1.apple.com, CarnivalQA...) -->
+                  <span class="method-name">init</span>
+                  <span class="parameters">(vp21q01if-ztbu14114601, vp21q01if-ztbu14114701, vp21q01if-hpba15080901, vp.if1.apple.com, CarnivalQA, cottoncandyCONF14D.3a7b1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="installPackageUsingValidPackageName">
+                  </a> <!-- installPackageUsingValidPackageName -->
+                  <span class="method-name">installPackageUsingValidPackageName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uninstallPackageFromCarnivalHostWhileItsCurrent">
+                  </a> <!-- uninstallPackageFromCarnivalHostWhileItsCurrent -->
+                  <span class="method-name">uninstallPackageFromCarnivalHostWhileItsCurrent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEnvironmentInfoPageToCheckPackageIsCurrent">
+                  </a> <!-- validateEnvironmentInfoPageToCheckPackageIsCurrent -->
+                  <span class="method-name">validateEnvironmentInfoPageToCheckPackageIsCurrent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEnvironmentInfoPageToCheckPackageIsNotCurrent">
+                  </a> <!-- validateEnvironmentInfoPageToCheckPackageIsNotCurrent -->
+                  <span class="method-name">validateEnvironmentInfoPageToCheckPackageIsNotCurrent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists">
+                  </a> <!-- validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists -->
+                  <span class="method-name">validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists">
+                  </a> <!-- validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists -->
+                  <span class="method-name">validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnCarnivalHostToCheckSerFileExists">
+                  </a> <!-- validateFileSystemOnCarnivalHostToCheckSerFileExists -->
+                  <span class="method-name">validateFileSystemOnCarnivalHostToCheckSerFileExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists">
+                  </a> <!-- validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists -->
+                  <span class="method-name">validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnWD40Host1ToCheckSerFileExists">
+                  </a> <!-- validateFileSystemOnWD40Host1ToCheckSerFileExists -->
+                  <span class="method-name">validateFileSystemOnWD40Host1ToCheckSerFileExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists">
+                  </a> <!-- validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists -->
+                  <span class="method-name">validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnWD40Host2ToCheckSerFileExists">
+                  </a> <!-- validateFileSystemOnWD40Host2ToCheckSerFileExists -->
+                  <span class="method-name">validateFileSystemOnWD40Host2ToCheckSerFileExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists">
+                  </a> <!-- validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists -->
+                  <span class="method-name">validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTaskDetailsLogs">
+                  </a> <!-- validateTaskDetailsLogs -->
+                  <span class="method-name">validateTaskDetailsLogs</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTaskDetailsLogsAfterUinstall">
+                  </a> <!-- validateTaskDetailsLogsAfterUinstall -->
+                  <span class="method-name">validateTaskDetailsLogsAfterUinstall</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTaskDetailsPage">
+                  </a> <!-- validateTaskDetailsPage -->
+                  <span class="method-name">validateTaskDetailsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTaskDetailsPageAfterUninstall">
+                  </a> <!-- validateTaskDetailsPageAfterUninstall -->
+                  <span class="method-name">validateTaskDetailsPageAfterUninstall</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CarnivalTestSuite-class-passed -->
+          <div class="suite-CarnivalTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="init(vp21q01if-ztbu14114601, vp21q01if-ztbu14114701, vp21q01if-hpba15080901, vp.if1.apple.com, CarnivalQA...)">
+                  </a> <!-- init(vp21q01if-ztbu14114601, vp21q01if-ztbu14114701, vp21q01if-hpba15080901, vp.if1.apple.com, CarnivalQA...) -->
+                  <span class="method-name">init</span>
+                  <span class="parameters">(vp21q01if-ztbu14114601, vp21q01if-ztbu14114701, vp21q01if-hpba15080901, vp.if1.apple.com, CarnivalQA, cottoncandyCONF14D.3a7b1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CarnivalTestSuite-class-passed -->
+          <div class="suite-CarnivalTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="init(vp21q01if-ztbu14114601, vp21q01if-ztbu14114701, vp21q01if-hpba15080901, vp.if1.apple.com, CarnivalQA...)">
+                  </a> <!-- init(vp21q01if-ztbu14114601, vp21q01if-ztbu14114701, vp21q01if-hpba15080901, vp.if1.apple.com, CarnivalQA...) -->
+                  <span class="method-name">init</span>
+                  <span class="parameters">(vp21q01if-ztbu14114601, vp21q01if-ztbu14114701, vp21q01if-hpba15080901, vp.if1.apple.com, CarnivalQA, cottoncandyCONF14D.3a7b1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="installPackageUsingValidPackageName">
+                  </a> <!-- installPackageUsingValidPackageName -->
+                  <span class="method-name">installPackageUsingValidPackageName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reinstallExistingPackageUsingNoForceOption">
+                  </a> <!-- reinstallExistingPackageUsingNoForceOption -->
+                  <span class="method-name">reinstallExistingPackageUsingNoForceOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uninstallPackageFromCarnivalHostWhileItsCurrent">
+                  </a> <!-- uninstallPackageFromCarnivalHostWhileItsCurrent -->
+                  <span class="method-name">uninstallPackageFromCarnivalHostWhileItsCurrent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEnvironmentInfoPageToCheckPackageIsCurrent">
+                  </a> <!-- validateEnvironmentInfoPageToCheckPackageIsCurrent -->
+                  <span class="method-name">validateEnvironmentInfoPageToCheckPackageIsCurrent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEnvironmentInfoPageToCheckPackageIsCurrentAfterReinstall">
+                  </a> <!-- validateEnvironmentInfoPageToCheckPackageIsCurrentAfterReinstall -->
+                  <span class="method-name">validateEnvironmentInfoPageToCheckPackageIsCurrentAfterReinstall</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEnvironmentInfoPageToCheckPackageIsNotCurrent">
+                  </a> <!-- validateEnvironmentInfoPageToCheckPackageIsNotCurrent -->
+                  <span class="method-name">validateEnvironmentInfoPageToCheckPackageIsNotCurrent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists">
+                  </a> <!-- validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists -->
+                  <span class="method-name">validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists">
+                  </a> <!-- validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists -->
+                  <span class="method-name">validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnCarnivalHostToCheckSerFileExists">
+                  </a> <!-- validateFileSystemOnCarnivalHostToCheckSerFileExists -->
+                  <span class="method-name">validateFileSystemOnCarnivalHostToCheckSerFileExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists">
+                  </a> <!-- validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists -->
+                  <span class="method-name">validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnWD40Host1ToCheckSerFileExists">
+                  </a> <!-- validateFileSystemOnWD40Host1ToCheckSerFileExists -->
+                  <span class="method-name">validateFileSystemOnWD40Host1ToCheckSerFileExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists">
+                  </a> <!-- validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists -->
+                  <span class="method-name">validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnWD40Host2ToCheckSerFileExists">
+                  </a> <!-- validateFileSystemOnWD40Host2ToCheckSerFileExists -->
+                  <span class="method-name">validateFileSystemOnWD40Host2ToCheckSerFileExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists">
+                  </a> <!-- validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists -->
+                  <span class="method-name">validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTaskDetailsLogsAfterReinstall">
+                  </a> <!-- validateTaskDetailsLogsAfterReinstall -->
+                  <span class="method-name">validateTaskDetailsLogsAfterReinstall</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTaskDetailsLogsAfterUinstall">
+                  </a> <!-- validateTaskDetailsLogsAfterUinstall -->
+                  <span class="method-name">validateTaskDetailsLogsAfterUinstall</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTaskDetailsPageAfterReinstall">
+                  </a> <!-- validateTaskDetailsPageAfterReinstall -->
+                  <span class="method-name">validateTaskDetailsPageAfterReinstall</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTaskDetailsPageAfterUninstall">
+                  </a> <!-- validateTaskDetailsPageAfterUninstall -->
+                  <span class="method-name">validateTaskDetailsPageAfterUninstall</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CarnivalTestSuite-class-passed -->
+        </div> <!-- panel CarnivalTestSuite -->
+        <div panel-name="test-xml-CarnivalTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/harisha/git-local/functional-qa/carnivaltests/MyTests.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;CarnivalTestSuite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;LOCAL-INSTALL-HOTFIX-TESTS&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests&quot;&gt;
+        &lt;parameter name=&quot;carnival.wd40host1&quot; value=&quot;vp21q01if-ztbu14114701&quot;/&gt;
+        &lt;parameter name=&quot;carnival.wd40host2&quot; value=&quot;vp21q01if-hpba15080901&quot;/&gt;
+        &lt;parameter name=&quot;carnival.package&quot; value=&quot;cottoncandyCONF14D.3a7b1&quot;/&gt;
+        &lt;parameter name=&quot;carnival.host&quot; value=&quot;vp21q01if-ztbu14114601&quot;/&gt;
+        &lt;parameter name=&quot;carnival.domain&quot; value=&quot;vp.if1.apple.com&quot;/&gt;
+        &lt;parameter name=&quot;carnival.project&quot; value=&quot;CarnivalQA&quot;/&gt;
+      &lt;/class&gt; &lt;!-- com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests --&gt;
+      &lt;class name=&quot;com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests&quot;&gt;
+        &lt;parameter name=&quot;carnival.wd40host1&quot; value=&quot;vp21q01if-ztbu14114701&quot;/&gt;
+        &lt;parameter name=&quot;carnival.wd40host2&quot; value=&quot;vp21q01if-hpba15080901&quot;/&gt;
+        &lt;parameter name=&quot;carnival.package&quot; value=&quot;cottoncandyCONF14D.3a7b1&quot;/&gt;
+        &lt;parameter name=&quot;carnival.host&quot; value=&quot;vp21q01if-ztbu14114601&quot;/&gt;
+        &lt;parameter name=&quot;carnival.domain&quot; value=&quot;vp.if1.apple.com&quot;/&gt;
+        &lt;parameter name=&quot;carnival.project&quot; value=&quot;CarnivalQA&quot;/&gt;
+      &lt;/class&gt; &lt;!-- com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests --&gt;
+      &lt;class name=&quot;com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests&quot;&gt;
+        &lt;parameter name=&quot;carnival.wd40host1&quot; value=&quot;vp21q01if-ztbu14114701&quot;/&gt;
+        &lt;parameter name=&quot;carnival.wd40host2&quot; value=&quot;vp21q01if-hpba15080901&quot;/&gt;
+        &lt;parameter name=&quot;carnival.package&quot; value=&quot;cottoncandyCONF14D.3a7b1&quot;/&gt;
+        &lt;parameter name=&quot;carnival.host&quot; value=&quot;vp21q01if-ztbu14114601&quot;/&gt;
+        &lt;parameter name=&quot;carnival.domain&quot; value=&quot;vp.if1.apple.com&quot;/&gt;
+        &lt;parameter name=&quot;carnival.project&quot; value=&quot;CarnivalQA&quot;/&gt;
+      &lt;/class&gt; &lt;!-- com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LOCAL-INSTALL-HOTFIX-TESTS --&gt;
+&lt;/suite&gt; &lt;!-- CarnivalTestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-CarnivalTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for CarnivalTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">LOCAL-INSTALL-HOTFIX-TESTS (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-CarnivalTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for CarnivalTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-CarnivalTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for CarnivalTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_CarnivalTestSuite');
+function tableData_CarnivalTestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(55);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validateEnvironmentInfoPageToCheckPackageIsCurrent')
+data.setCell(0, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests')
+data.setCell(0, 3, 955343);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validateEnvironmentInfoPageToCheckPackageIsCurrent')
+data.setCell(1, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(1, 3, 955334);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateEnvironmentInfoPageToCheckPackageIsCurrentAfterReinstall')
+data.setCell(2, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(2, 3, 955316);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'installPackageUsingValidPackageName')
+data.setCell(3, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(3, 3, 41156);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'installPackageUsingValidPackageName')
+data.setCell(4, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(4, 3, 38326);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'uninstallPackageFromCarnivalHostWhileItsCurrent')
+data.setCell(5, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests')
+data.setCell(5, 3, 37838);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateTaskDetailsPageAfterUninstall')
+data.setCell(6, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests')
+data.setCell(6, 3, 37697);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'uninstallPackageFromCarnivalHostWhileItsCurrent')
+data.setCell(7, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(7, 3, 37685);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateTaskDetailsPage')
+data.setCell(8, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests')
+data.setCell(8, 3, 37252);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validateTaskDetailsPageAfterReinstall')
+data.setCell(9, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(9, 3, 37249);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validateTaskDetailsPageAfterUninstall')
+data.setCell(10, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(10, 3, 37225);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'reinstallExistingPackageUsingNoForceOption')
+data.setCell(11, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(11, 3, 35682);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'installPackageUsingValidPackageName')
+data.setCell(12, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests')
+data.setCell(12, 3, 35601);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validateEnvironmentInfoPageToCheckPackageIsNotCurrent')
+data.setCell(13, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(13, 3, 18328);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'validateEnvironmentInfoPageToCheckPackageIsNotCurrent')
+data.setCell(14, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests')
+data.setCell(14, 3, 18259);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists')
+data.setCell(15, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests')
+data.setCell(15, 3, 3185);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists')
+data.setCell(16, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests')
+data.setCell(16, 3, 2783);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'validateFileSystemOnWD40Host1ToCheckSerFileExists')
+data.setCell(17, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests')
+data.setCell(17, 3, 2758);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists')
+data.setCell(18, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests')
+data.setCell(18, 3, 2644);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'validateFileSystemOnWD40Host2ToCheckSerFileExists')
+data.setCell(19, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests')
+data.setCell(19, 3, 2443);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'validateFileSystemOnWD40Host2ToCheckSerFileExists')
+data.setCell(20, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(20, 3, 2418);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists')
+data.setCell(21, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests')
+data.setCell(21, 3, 2416);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'validateFileSystemOnCarnivalHostToCheckSerFileExists')
+data.setCell(22, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(22, 3, 2409);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists')
+data.setCell(23, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(23, 3, 2398);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists')
+data.setCell(24, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(24, 3, 2389);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'validateFileSystemOnWD40Host1ToCheckSerFileExists')
+data.setCell(25, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(25, 3, 2387);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists')
+data.setCell(26, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(26, 3, 2385);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'validateFileSystemOnCarnivalHostToCheckSerFileExists')
+data.setCell(27, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests')
+data.setCell(27, 3, 2380);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists')
+data.setCell(28, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests')
+data.setCell(28, 3, 2345);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists')
+data.setCell(29, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(29, 3, 2339);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists')
+data.setCell(30, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(30, 3, 2327);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'validateTaskDetailsLogsAfterUinstall')
+data.setCell(31, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests')
+data.setCell(31, 3, 2314);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'validateTaskDetailsLogsAfterUinstall')
+data.setCell(32, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(32, 3, 2240);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'validateTaskDetailsLogsAfterReinstall')
+data.setCell(33, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(33, 3, 2229);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'validateTaskDetailsLogs')
+data.setCell(34, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests')
+data.setCell(34, 3, 2222);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'init')
+data.setCell(35, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests')
+data.setCell(35, 3, 4);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'init')
+data.setCell(36, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(36, 3, 1);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'validateEnvironmentInfoPageToCheckPackageIsCurrentAfterReinstall')
+data.setCell(37, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(37, 3, 1);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'validateEnvironmentInfoPageToCheckPackageIsNotCurrent')
+data.setCell(38, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(38, 3, 1);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'reinstallExistingPackageUsingForceOption')
+data.setCell(39, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(39, 3, 1);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'init')
+data.setCell(40, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(40, 3, 0);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'validateTaskDetailsLogsAfterUinstall')
+data.setCell(41, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(41, 3, 0);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'validateTaskDetailsLogsAfterReinstall')
+data.setCell(42, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(42, 3, 0);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'validateTaskDetailsPageAfterUninstall')
+data.setCell(43, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(43, 3, 0);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'validateFileSystemOnWD40Host1ToCheckSerFileExists')
+data.setCell(44, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(44, 3, 0);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'validateFileSystemOnWD40Host2ToCheckSerFileExists')
+data.setCell(45, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(45, 3, 0);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists')
+data.setCell(46, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(46, 3, 0);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists')
+data.setCell(47, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(47, 3, 0);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists')
+data.setCell(48, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(48, 3, 0);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'validateFileSystemOnCarnivalHostToCheckSerFileExists')
+data.setCell(49, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(49, 3, 0);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists')
+data.setCell(50, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(50, 3, 0);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'validateEnvironmentInfoPageToCheckPackageIsCurrent')
+data.setCell(51, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(51, 3, 0);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'validateTaskDetailsPageAfterReinstall')
+data.setCell(52, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(52, 3, 0);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists')
+data.setCell(53, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(53, 3, 0);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'uninstallPackageFromCarnivalHostWhileItsCurrent')
+data.setCell(54, 2, 'com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests')
+data.setCell(54, 3, 0);
+window.suiteTableData['CarnivalTestSuite']= { tableData: data, tableDiv: 'times-div-CarnivalTestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 55 minutes</span>
+              <div id="times-div-CarnivalTestSuite">
+              </div> <!-- times-div-CarnivalTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-CarnivalTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for CarnivalTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateFileSystemOnWD40Host2ToCheckSerFileExists</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Check to see .ser file exists under /opt/ais/local/.wd40-inventory/Install </span>
+                <span class="reporter-method-output">Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</span>
+                <span class="reporter-method-output">.ser file location is :/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser</span>
+                <span class="reporter-method-output">The out put is : 
+/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateFileSystemOnWD40Host2ToCheckSerFileExists</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Check to see .ser file exists under /opt/ais/local/.wd40-inventory/Install </span>
+                <span class="reporter-method-output">Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</span>
+                <span class="reporter-method-output">.ser file location is :/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser</span>
+                <span class="reporter-method-output">The out put is : 
+/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Check to see .ser file exists under /opt/ais/local/.wd40-inventory/Install </span>
+                <span class="reporter-method-output">Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</span>
+                <span class="reporter-method-output">.ser file location is :</span>
+                <span class="reporter-method-output">The out put is : 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateTaskDetailsLogs</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validate View Logs Page after install</span>
+                <span class="reporter-method-output">Validate Taks Details Logs</span>
+                <span class="reporter-method-output">The Action Log is : Thu Apr 02 21:14:39 PDT 2015 Local Install(s) Info cottoncandyCONF14D.3a7b1 queued for execution.
+Thu Apr 02 21:14:41 PDT 2015 User 17.153.41.45 requested install of cottoncandyCONF14D.3a7b1 for project CarnivalQA on Carnival host vp21q01if-ztbu14114601.
+Thu Apr 02 21:14:42 PDT 2015 cottoncandyCONF14D.3a7b1 install confirmed on this Carnival host.
+Thu Apr 02 21:14:44 PDT 2015 Sending install requests to configured hosts...
+Thu Apr 02 21:14:44 PDT 2015 Determining hosts missing package: cottoncandyCONF14D.3a7b1.  Sending followup install requests to 2 active host(s).Expand/Collapse
+
+Thu Apr 02 21:14:44 PDT 2015 Verifying install. Giving applications up to 5 min.
+Thu Apr 02 21:14:45 PDT 2015 cottoncandyCONF14D.3a7b1 has been confirmed on the required 2 hosts below: 
+Expand/Collapse
+
+
+Thu Apr 02 21:14:45 PDT 2015 Install of cottoncandyCONF14D.3a7b1 for project CarnivalQA has succeeded on 100.0% ( 2 out of 2 ) of required hosts.  Acceptance Threshold entered by user: 100.0%.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Check to see .corrupt file does not exists under /opt/ais/local/.wd40-inventory/Install </span>
+                <span class="reporter-method-output">Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</span>
+                <span class="reporter-method-output">.ser file location is :</span>
+                <span class="reporter-method-output">The out put is : 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Check to see .ser file exists under /opt/ais/local/.wd40-inventory/Install </span>
+                <span class="reporter-method-output">Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</span>
+                <span class="reporter-method-output">.ser file location is :</span>
+                <span class="reporter-method-output">The out put is : 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">uninstallPackageFromCarnivalHostWhileItsCurrent</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Uninstalling the package from carnival UI</span>
+                <span class="reporter-method-output">Uninstall Successfull</span>
+                <span class="reporter-method-output">Performing Assertions</span>
+                <span class="reporter-method-output">Expected note is : Successfully scheduled task \d{13} for execution! and got  note from server as  : Successfully scheduled task 1428035520308 for execution!</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Check to see .ser file exists under /opt/ais/local/.wd40-inventory/Install </span>
+                <span class="reporter-method-output">Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</span>
+                <span class="reporter-method-output">.ser file location is :</span>
+                <span class="reporter-method-output">The out put is : 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">init(vp21q01if-ztbu14114601, vp21q01if-ztbu14114701, vp21q01if-hpba15080901, vp.if1.apple.com, CarnivalQA...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests tests with the following details :</span>
+                <span class="reporter-method-output">Carnival Host :vp21q01if-ztbu14114601</span>
+                <span class="reporter-method-output">Domain  :vp.if1.apple.com</span>
+                <span class="reporter-method-output">PROEJCT :CarnivalQA</span>
+                <span class="reporter-method-output">PACKAGE  :cottoncandyCONF14D.3a7b1</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateEnvironmentInfoPageToCheckPackageIsNotCurrent</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validate Environment Info Page to check the package is not Current</span>
+                <span class="reporter-method-output">Wait for 15 seconds for the Environemnt Info page to refresh</span>
+                <span class="reporter-method-output">The packages are :clown ()
+clownCONF (clownCONF14A162)
+cottoncandyCONF ()
+cottoncandy_bin ()</span>
+                <span class="reporter-method-output">Validate the package :cottoncandyCONF14D.3a7b1 is not current</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">uninstallPackageFromCarnivalHostWhileItsCurrent</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Uninstalling the package from carnival UI</span>
+                <span class="reporter-method-output">Uninstall Successfull</span>
+                <span class="reporter-method-output">Performing Assertions</span>
+                <span class="reporter-method-output">Expected note is : Successfully scheduled task \d{13} for execution! and got  note from server as  : Successfully scheduled task 1428037717470 for execution!</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Check to see .corrupt file does not exists under /opt/ais/local/.wd40-inventory/Install </span>
+                <span class="reporter-method-output">Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</span>
+                <span class="reporter-method-output">.ser file location is :</span>
+                <span class="reporter-method-output">The out put is : 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">installPackageUsingValidPackageName</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Local Install Hotfix from carnival UI with valid package name</span>
+                <span class="reporter-method-output">Performing Assertions</span>
+                <span class="reporter-method-output">Expected notice is : Successfully scheduled task \d{13} for execution! and got error message from server as  : Successfully scheduled task 1428034475312 for execution!</span>
+                <span class="reporter-method-output">The request ID is :1428034475312</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">installPackageUsingValidPackageName</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Local Install Hotfix from carnival UI with valid package name</span>
+                <span class="reporter-method-output">Performing Assertions</span>
+                <span class="reporter-method-output">Expected notice is : Successfully scheduled task \d{13} for execution! and got error message from server as  : Successfully scheduled task 1428035681932 for execution!</span>
+                <span class="reporter-method-output">The request ID is :1428035681932</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateTaskDetailsLogsAfterReinstall</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validate View Logs Page after reinstall</span>
+                <span class="reporter-method-output">Validate Taks Details Logs</span>
+                <span class="reporter-method-output">The Action Log is : Thu Apr 02 21:51:19 PDT 2015 Local Install(s) Info cottoncandyCONF14D.3a7b1 queued for execution.
+Thu Apr 02 21:51:22 PDT 2015 User 17.153.41.45 requested install of cottoncandyCONF14D.3a7b1 for project CarnivalQA on Carnival host vp21q01if-ztbu14114601.
+Thu Apr 02 21:51:23 PDT 2015 cottoncandyCONF14D.3a7b1 install confirmed on this Carnival host.
+Thu Apr 02 21:51:24 PDT 2015 Sending install requests to configured hosts...
+Thu Apr 02 21:51:24 PDT 2015 Determining hosts missing package: cottoncandyCONF14D.3a7b1.  Sending followup install requests to 0 active host(s).Expand/Collapse
+Thu Apr 02 21:51:25 PDT 2015 Install of cottoncandyCONF14D.3a7b1 for project CarnivalQA succeeded on all required hosts.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateTaskDetailsPageAfterReinstall</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validate Task Details Page after reinstall</span>
+                <span class="reporter-method-output">The task detail url is :http://vp21q01if-ztbu14114601.vp.if1.apple.com:8080/Carnival/TaskDetail.jsp?id=1428036672851</span>
+                <span class="reporter-method-output">The Current Status is : COMPLETED</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateFileSystemOnCarnivalHostToCheckSerFileExists</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Check to see .ser file exists under /opt/ais/local/.wd40-inventory/Install </span>
+                <span class="reporter-method-output">Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</span>
+                <span class="reporter-method-output">.ser file location is :/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser</span>
+                <span class="reporter-method-output">The out put is : 
+/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateEnvironmentInfoPageToCheckPackageIsCurrentAfterReinstall</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validate Environment Info Page to check the package is Current</span>
+                <span class="reporter-method-output">Wait for 15 mins for the Environemnt Info page to refresh</span>
+                <span class="reporter-method-output">The packages are :clown ()
+clownCONF (clownCONF14A162)
+cottoncandyCONF (cottoncandyCONF14D.3a7b1)
+cottoncandy_bin ()</span>
+                <span class="reporter-method-output">Validate the package :cottoncandyCONF14D.3a7b1 is current</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateTaskDetailsPage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validate Task Details Page</span>
+                <span class="reporter-method-output">The task detail url is :http://vp21q01if-ztbu14114601.vp.if1.apple.com:8080/Carnival/TaskDetail.jsp?id=1428034475312</span>
+                <span class="reporter-method-output">The Current Status is : COMPLETED</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateFileSystemOnCarnivalHostToCheckSerFileExists</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Check to see .ser file exists under /opt/ais/local/.wd40-inventory/Install </span>
+                <span class="reporter-method-output">Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</span>
+                <span class="reporter-method-output">.ser file location is :/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser</span>
+                <span class="reporter-method-output">The out put is : 
+/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateFileSystemOnWD40Host1ToCheckSerFileExists</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Check to see .ser file exists under /opt/ais/local/.wd40-inventory/Install </span>
+                <span class="reporter-method-output">Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</span>
+                <span class="reporter-method-output">.ser file location is :/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser</span>
+                <span class="reporter-method-output">The out put is : 
+/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateTaskDetailsLogsAfterUinstall</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validate Taks Details Logs</span>
+                <span class="reporter-method-output">The Action Log is : Thu Apr 02 22:08:39 PDT 2015 Uninstall Package(s): cottoncandyCONF14D.3a7b1 queued for execution.
+Thu Apr 02 22:08:46 PDT 2015 User 17.153.41.45 requested uninstall of cottoncandyCONF14D.3a7b1 for project CarnivalQA on Carnival host vp21q01if-ztbu14114601.
+Thu Apr 02 22:08:47 PDT 2015 cottoncandyCONF14D.3a7b1 uninstall confirmed on this Carnival host.
+Thu Apr 02 22:08:48 PDT 2015 Sending uninstall requests to configured hosts...
+Thu Apr 02 22:08:48 PDT 2015 Determining hosts missing package: cottoncandyCONF14D.3a7b1.  Sending followup uninstall requests to 2 active host(s).Expand/Collapse
+
+Thu Apr 02 22:08:48 PDT 2015 Verifying uninstall. Giving applications up to 5 min.
+Thu Apr 02 22:08:49 PDT 2015 cottoncandyCONF14D.3a7b1 has been confirmed on the required 2 hosts below: 
+Expand/Collapse
+
+
+Thu Apr 02 22:08:49 PDT 2015 Uninstall of cottoncandyCONF14D.3a7b1 for project CarnivalQA has succeeded on 100.0% ( 2 out of 2 ) of required hosts.  Acceptance Threshold entered by user: 100.0%.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">init(vp21q01if-ztbu14114601, vp21q01if-ztbu14114701, vp21q01if-hpba15080901, vp.if1.apple.com, CarnivalQA...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">LocalInstallHotfixWhenPackageIsUnavailableTests tests with the following details :</span>
+                <span class="reporter-method-output">Carnival Host :vp21q01if-ztbu14114601</span>
+                <span class="reporter-method-output">Domain  :vp.if1.apple.com</span>
+                <span class="reporter-method-output">PROEJCT :CarnivalQA</span>
+                <span class="reporter-method-output">PACKAGE  :cottoncandyCONF14D.3a7b1</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateEnvironmentInfoPageToCheckPackageIsCurrent</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validate Environment Info Page to check the package is Current</span>
+                <span class="reporter-method-output">Wait for 15 mins for the Environemnt Info page to refresh</span>
+                <span class="reporter-method-output">The packages are :clown ()
+clownCONF (clownCONF14A162)
+cottoncandyCONF (cottoncandyCONF14D.3a7b1)
+cottoncandy_bin ()</span>
+                <span class="reporter-method-output">Validate the package :cottoncandyCONF14D.3a7b1 is current</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Check to see .ser file does not exists under /opt/ais/local/.wd40-inventory/Install </span>
+                <span class="reporter-method-output">Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</span>
+                <span class="reporter-method-output">.ser file location is :/opt/ais/local/.wd40-inventory/Install/</span>
+                <span class="reporter-method-output">The out put is : 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateTaskDetailsLogsAfterUinstall</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validate Taks Details Logs</span>
+                <span class="reporter-method-output">The Action Log is : Thu Apr 02 21:32:09 PDT 2015 Uninstall Package(s): cottoncandyCONF14D.3a7b1 queued for execution.
+Thu Apr 02 21:32:12 PDT 2015 User 17.153.41.45 requested uninstall of cottoncandyCONF14D.3a7b1 for project CarnivalQA on Carnival host vp21q01if-ztbu14114601.
+Thu Apr 02 21:32:13 PDT 2015 cottoncandyCONF14D.3a7b1 uninstall confirmed on this Carnival host.
+Thu Apr 02 21:32:15 PDT 2015 Sending uninstall requests to configured hosts...
+Thu Apr 02 21:32:15 PDT 2015 Determining hosts missing package: cottoncandyCONF14D.3a7b1.  Sending followup uninstall requests to 2 active host(s).Expand/Collapse
+
+Thu Apr 02 21:32:15 PDT 2015 Verifying uninstall. Giving applications up to 5 min.
+Thu Apr 02 21:32:16 PDT 2015 cottoncandyCONF14D.3a7b1 has been confirmed on the required 2 hosts below: 
+Expand/Collapse
+
+
+Thu Apr 02 21:32:16 PDT 2015 Uninstall of cottoncandyCONF14D.3a7b1 for project CarnivalQA has succeeded on 100.0% ( 2 out of 2 ) of required hosts.  Acceptance Threshold entered by user: 100.0%.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateTaskDetailsPageAfterUninstall</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validate Task Details Page</span>
+                <span class="reporter-method-output">The task detail url is :http://vp21q01if-ztbu14114601.vp.if1.apple.com:8080/Carnival/TaskDetail.jsp?id=1428037717470</span>
+                <span class="reporter-method-output">The Current Status is : COMPLETED</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Check to see .ser file exists under /opt/ais/local/.wd40-inventory/Install </span>
+                <span class="reporter-method-output">Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</span>
+                <span class="reporter-method-output">.ser file location is :</span>
+                <span class="reporter-method-output">The out put is : 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Check to see .corrupt file does not exists under /opt/ais/local/.wd40-inventory/Install </span>
+                <span class="reporter-method-output">Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</span>
+                <span class="reporter-method-output">.ser file location is :</span>
+                <span class="reporter-method-output">The out put is : 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">init(vp21q01if-ztbu14114601, vp21q01if-ztbu14114701, vp21q01if-hpba15080901, vp.if1.apple.com, CarnivalQA...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests tests with the following details :</span>
+                <span class="reporter-method-output">Carnival Host :vp21q01if-ztbu14114601</span>
+                <span class="reporter-method-output">Domain  :vp.if1.apple.com</span>
+                <span class="reporter-method-output">PROEJCT :CarnivalQA</span>
+                <span class="reporter-method-output">PACKAGE  :cottoncandyCONF14D.3a7b1</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateEnvironmentInfoPageToCheckPackageIsNotCurrent</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validate Environment Info Page to check the package is not Current</span>
+                <span class="reporter-method-output">Wait for 15 seconds for the Environemnt Info page to refresh</span>
+                <span class="reporter-method-output">The packages are :clown ()
+clownCONF (clownCONF14A162)</span>
+                <span class="reporter-method-output">Validate the package :cottoncandyCONF14D.3a7b1 is not current</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateTaskDetailsPageAfterUninstall</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validate Task Details Page</span>
+                <span class="reporter-method-output">The task detail url is :http://vp21q01if-ztbu14114601.vp.if1.apple.com:8080/Carnival/TaskDetail.jsp?id=1428035520308</span>
+                <span class="reporter-method-output">The Current Status is : COMPLETED</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateEnvironmentInfoPageToCheckPackageIsCurrent</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validate Environment Info Page to check the package is Current</span>
+                <span class="reporter-method-output">Wait for 15 mins for the Environemnt Info page to refresh</span>
+                <span class="reporter-method-output">The packages are :clown ()
+clownCONF (clownCONF14A162)
+cottoncandyCONF (cottoncandyCONF14D.3a7b1)
+cottoncandy_bin ()</span>
+                <span class="reporter-method-output">Validate the package :cottoncandyCONF14D.3a7b1 is current</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Check to see .corrupt file does not exists under /opt/ais/local/.wd40-inventory/Install </span>
+                <span class="reporter-method-output">Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</span>
+                <span class="reporter-method-output">.ser file location is :</span>
+                <span class="reporter-method-output">The out put is : 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">reinstallExistingPackageUsingNoForceOption</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Local Install Hotfix from carnival UI with an already existing package name</span>
+                <span class="reporter-method-output">Performing Assertions</span>
+                <span class="reporter-method-output">Expected notice is : Successfully scheduled task \d{13} for execution! and got error message from server as  : Successfully scheduled task 1428036672851 for execution!</span>
+                <span class="reporter-method-output">The request ID is :1428036672851</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Check to see .ser file does not exists under /opt/ais/local/.wd40-inventory/Install </span>
+                <span class="reporter-method-output">Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</span>
+                <span class="reporter-method-output">.ser file location is :/opt/ais/local/.wd40-inventory/Install/</span>
+                <span class="reporter-method-output">The out put is : 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateFileSystemOnWD40Host1ToCheckSerFileExists</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Check to see .ser file exists under /opt/ais/local/.wd40-inventory/Install </span>
+                <span class="reporter-method-output">Connecting to remote host using Jcraft Libraries to validate package does exists on carnival host</span>
+                <span class="reporter-method-output">.ser file location is :/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser</span>
+                <span class="reporter-method-output">The out put is : 
+/opt/ais/local/.wd40-inventory/Install/cottoncandyCONF14D.3a7b1.ser
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">installPackageUsingValidPackageName</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Local Install Hotfix from carnival UI with valid package name</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-CarnivalTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-CarnivalTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.apple.carnival.ui.localinstall.LocalInstallHotfixWhenPackageIsUnavailableTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setConfig</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">init(vp21q01if-ztbu14114601, vp21q01if-ztbu14114701, vp21q01if-hpba15080901, vp.if1.apple.com, CarnivalQA...)</span>
+                <span class="method-start">10391 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">installPackageUsingValidPackageName</span>
+                <span class="method-start">10397 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateTaskDetailsPage</span>
+                <span class="method-start">46001 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateTaskDetailsLogs</span>
+                <span class="method-start">83255 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateEnvironmentInfoPageToCheckPackageIsCurrent</span>
+                <span class="method-start">85478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateFileSystemOnWD40Host1ToCheckSerFileExists</span>
+                <span class="method-start">1040824 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateFileSystemOnWD40Host2ToCheckSerFileExists</span>
+                <span class="method-start">1043584 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateFileSystemOnCarnivalHostToCheckSerFileExists</span>
+                <span class="method-start">1046029 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists</span>
+                <span class="method-start">1048411 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists</span>
+                <span class="method-start">1050829 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">uninstallPackageFromCarnivalHostWhileItsCurrent</span>
+                <span class="method-start">1053176 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateEnvironmentInfoPageToCheckPackageIsNotCurrent</span>
+                <span class="method-start">1091015 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateTaskDetailsPageAfterUninstall</span>
+                <span class="method-start">1109275 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateTaskDetailsLogsAfterUinstall</span>
+                <span class="method-start">1146974 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists</span>
+                <span class="method-start">1149289 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists</span>
+                <span class="method-start">1152476 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists</span>
+                <span class="method-start">1155260 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">1157904 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingForceInstallOptionWhenPackageIsAvailableTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setConfig</span>
+                <span class="method-start">1159981 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">init(vp21q01if-ztbu14114601, vp21q01if-ztbu14114701, vp21q01if-hpba15080901, vp.if1.apple.com, CarnivalQA...)</span>
+                <span class="method-start">1167198 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">installPackageUsingValidPackageName</span>
+                <span class="method-start">1167200 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">1208593 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.apple.carnival.ui.localinstall.LocalInstallHotfixUsingNoForceInstallOptionWhenPackageIsAvailableTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setConfig</span>
+                <span class="method-start">1210671 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">init(vp21q01if-ztbu14114601, vp21q01if-ztbu14114701, vp21q01if-hpba15080901, vp.if1.apple.com, CarnivalQA...)</span>
+                <span class="method-start">1214316 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">installPackageUsingValidPackageName</span>
+                <span class="method-start">1214317 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateEnvironmentInfoPageToCheckPackageIsCurrent</span>
+                <span class="method-start">1252645 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reinstallExistingPackageUsingNoForceOption</span>
+                <span class="method-start">2207980 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateTaskDetailsPageAfterReinstall</span>
+                <span class="method-start">2243663 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateTaskDetailsLogsAfterReinstall</span>
+                <span class="method-start">2280913 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateEnvironmentInfoPageToCheckPackageIsCurrentAfterReinstall</span>
+                <span class="method-start">2283143 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateFileSystemOnWD40Host1ToCheckSerFileExists</span>
+                <span class="method-start">3238461 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateFileSystemOnWD40Host2ToCheckSerFileExists</span>
+                <span class="method-start">3240849 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateFileSystemOnCarnivalHostToCheckSerFileExists</span>
+                <span class="method-start">3243268 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateFileSystemOnWD40HostToCheckCorruptFileDoesNotExists</span>
+                <span class="method-start">3245678 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateFileSystemOnCarnivalHostToCheckCorruptFileDoesNotExists</span>
+                <span class="method-start">3248077 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">uninstallPackageFromCarnivalHostWhileItsCurrent</span>
+                <span class="method-start">3250467 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateEnvironmentInfoPageToCheckPackageIsNotCurrent</span>
+                <span class="method-start">3288153 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateTaskDetailsPageAfterUninstall</span>
+                <span class="method-start">3306482 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateTaskDetailsLogsAfterUinstall</span>
+                <span class="method-start">3343708 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateFileSystemOnWD40Host1ToCheckSerFileDoesNotExists</span>
+                <span class="method-start">3345949 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateFileSystemOnWD40Host2ToCheckSerFileDoesNotExists</span>
+                <span class="method-start">3348289 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateFileSystemOnCarnivalHostToCheckSerFileDoesNotExists</span>
+                <span class="method-start">3350675 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">3353002 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,57 @@
+[
+
+{
+	"input":
+	{
+		"resource":"/services/hosts",
+		"method":"GET"
+		
+	},
+	"expected":
+	{
+		"date":
+		{
+		"statuscode":200,
+		"entity":"vp21q01if-hpba15080901,vp21q01if-ztbu14114601,vp21q01if-ztbu14114701"
+		}
+	}
+	
+
+},
+
+{
+	"input":
+	{
+		"resource":"/services/hosts",
+		"method":"POST",
+		"data":
+		{
+		"notes" : [ ],
+		"scheduledDate" : "2014/10/13 9:35 AM PDT",
+		"actions" : 
+		 [ 
+			{
+				"type" : "localinstallinfrastructure",
+				"project" : "infrastructure",
+				"packages" : "OpenMQ/openmq-4.4u2-2",
+				"forceInstall" : false,
+				"installOnHostsStyle" : "REGEX_INSTALL_STYLE",
+				"hostRegex" : "vp21q01if-ztbu14114701",
+				"acceptanceThreshold" : "100.0"
+			} 
+		  	
+		 ]
+		}
+	  },
+  	"expected":
+	{
+		"data":
+		{
+		"statuscode":200,
+		"entity":"vp21q01if-hpba15080901,vp21q01if-ztbu14114601,vp21q01if-ztbu14114701"
+		}
+	}
+}
+
+
+]

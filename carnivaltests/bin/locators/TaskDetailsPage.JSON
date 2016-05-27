@@ -1,0 +1,13 @@
+{
+    "CurrentState": 
+    { 
+    	"locator": "//div[@id='Wrapper']//div[@id='Page']//font[@class='taskStatus']",
+    	"type": "xpath"
+    },
+    
+     "ViewLogTable": 
+    { 
+    	"locator": "[View Log]",
+    	"type": "link"
+    }
+}

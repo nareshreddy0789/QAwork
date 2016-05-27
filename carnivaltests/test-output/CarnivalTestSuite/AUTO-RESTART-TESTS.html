@@ -1,0 +1,175 @@
+<html>
+<head>
+<title>TestNG:  AUTO-RESTART-TESTS</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AUTO-RESTART-TESTS</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Feb 18 01:54:29 PST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>688 seconds (688685 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.apple.carnival.api.request.AutoRestartTests.createAndScheduleRequestTestToInstallPackage()'><b>createAndScheduleRequestTestToInstallPackage</b><br>Test class: com.apple.carnival.api.request.AutoRestartTests<br/>
+<a href="#Output-1198425098" onClick='toggleBox("Output-1198425098", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1198425098" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1198425098">
+Install the package :clown14A147 from carnival UI<br/>
+Install the package : clown14A147<br/>
+Performing Assertions<br/>
+Expected note is : Successfully scheduled task \d{13} for execution! and got  note from server as  : Successfully scheduled task 1424253304336 for execution!<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>com.apple.carnival.api.request.AutoRestartTests@2296a71f</td></tr>
+<tr>
+<td title='com.apple.carnival.api.request.AutoRestartTests.init()'><b>init</b><br>Test class: com.apple.carnival.api.request.AutoRestartTests<br>Parameters: vp21q01if-ztbu14114701, vp.if1.apple.com, CarnivalQA, clown14A147, clown<br/>
+<a href="#Output-1450492277" onClick='toggleBox("Output-1450492277", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1450492277" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1450492277">
+Auto restart tests with the following details :<br/>
+WD40 HOST :vp21q01if-ztbu14114701<br/>
+DOMAIN :vp.if1.apple.com<br/>
+PROEJCT :CarnivalQA<br/>
+PACKAGE  :clown14A147<br/>
+EXPECTED APP NAME  :clown<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.apple.carnival.api.request.AutoRestartTests@2296a71f</td></tr>
+<tr>
+<td title='com.apple.carnival.api.request.AutoRestartTests.validateConfLineOnWD40Host()'><b>validateConfLineOnWD40Host</b><br>Test class: com.apple.carnival.api.request.AutoRestartTests<br/>
+<a href="#Output-585739381" onClick='toggleBox("Output-585739381", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-585739381" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-585739381">
+Peforming Binary Conf Validations<br/>
+The app name is :clown<br/>
+The instance is :1011<br/>
+Binary ConfLine verified successfully<br/>
+Peforming PS Conf Validations<br/>
+The app name is :clown<br/>
+The instance is :1011<br/>
+The process id is :9153<br/>
+PS ConfLine verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>com.apple.carnival.api.request.AutoRestartTests@2296a71f</td></tr>
+<tr>
+<td title='com.apple.carnival.api.request.AutoRestartTests.verifyAppInstanceRestart()'><b>verifyAppInstanceRestart</b><br>Test class: com.apple.carnival.api.request.AutoRestartTests<br/>
+<a href="#Output-2006862686" onClick='toggleBox("Output-2006862686", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2006862686" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2006862686">
+The app instance restart<br/>
+Connecting to remote host using Jcraft Libraries to kill the app instance on WD40 Host :vp21q01if-ztbu14114701<br/>
+The out put is : 
+<br/>
+Wait five(5) minutes so that process is reported to carnival<br/>
+Peforming PS Conf Validations<br/>
+The app name is :clown<br/>
+The instance is :1011<br/>
+The new process id is :25042<br/>
+PS ConfLine verified successfully<br/>
+Verifying to check if new process id is generated and validate its not same as the old one<br/>
+</div>
+</td>
+<td></td>
+<td>307</td>
+<td>com.apple.carnival.api.request.AutoRestartTests@2296a71f</td></tr>
+<tr>
+<td title='com.apple.carnival.api.request.AutoRestartTests.verifyAppInstanceRestart()'><b>verifyAppInstanceRestart</b><br>Test class: com.apple.carnival.api.request.AutoRestartTests<br/>
+<a href="#Output-746906365" onClick='toggleBox("Output-746906365", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-746906365" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-746906365">
+The app instance restart<br/>
+Connecting to remote host using Jcraft Libraries to kill the app instance on WD40 Host :vp21q01if-ztbu14114701<br/>
+The out put is : 
+<br/>
+Wait five(5) minutes so that process is reported to carnival<br/>
+Peforming PS Conf Validations<br/>
+The app name is :clown<br/>
+The instance is :1011<br/>
+The new process id is :26318<br/>
+PS ConfLine verified successfully<br/>
+Verifying to check if new process id is generated and validate its not same as the old one<br/>
+</div>
+</td>
+<td></td>
+<td>305</td>
+<td>com.apple.carnival.api.request.AutoRestartTests@2296a71f</td></tr>
+</table><p>
+</body>
+</html>
