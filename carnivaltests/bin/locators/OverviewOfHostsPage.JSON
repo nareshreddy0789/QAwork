@@ -1,7 +1,0 @@
-{
-    "HostOverviewTable": 
-    { 
-    	"locator": "hostOverviewTable",
-    	"type": "id"
-    }
-}
